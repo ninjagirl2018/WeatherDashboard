@@ -1,64 +1,74 @@
-.body {
+.body{
     display: flex;
-    height: fit-content;
     font-family: Arial, Helvetica, sans-serif;
+    color: darkgray;
 }
 
 #banner {
-    position: fixed;
     width: 100%;
-    height: 65px;
+    height: 85px;
     background-color: darkslategray;
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
+    color: lightcyan;
     text-align: center;
-    padding-top: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 20px;
+    text-align: center;
 }
 
 #cities {
-    position: fixed;
-    width: 250px;
-    height: 650px;
-    background-color: darkturquoise;
-    margin-top: 120px;
-    display: flex;
+    border: 1.5px solid darkgray;
+    padding: 15px;
+    margin: 25px;
+    height: flex;
+   
+    
 }
 
-#main {
-    position: fixed;
-    width: 1200px;
-    height: 400px;
-    background-color: deeppink;
-    margin-top: 120px;
-    margin-left: 275px;
-    display: fixed;
-}
-
-.forecast {
-    position: fixed;
-    width: 180px;
-    height: 230px;
-    background-color: forestgreen;
-    margin-top: 540px;
+#mainDisplay {
+    border: 1.5px solid darkgray;
+    padding: 15px;
+    margin: 25px;
+    height: 250px;
+    
 }
 
 #day1 {
-    margin-left: 300px;
+    border: 1.5px solid darkgray;
+    margin-left: 320px;
+    width: 200px;
+    color: red;
 }
 
 #day2 {
-    margin-left: 525px;
+    border: 1.5px solid darkgray;
+    margin-left: 25px;
+    width: 200px;
+    color: red;
 }
 
 #day3 {
-    margin-left: 750px;
+    border: 1.5px solid darkgray;
+    margin-left: 25px;
+    width: 200px;
+    color: red;
 }
 
 #day4 {
-    margin-left: 975px;
+    border: 1.5px solid darkgray;
+    margin-left: 25px;
+    width: 200px;
+    color: red;
 }
 
 #day5 {
-    margin-left: 1200px;
+    border: 1.5px solid darkgray;
+    margin-left: 25px;
+    width: 200px;
+    color: red;
 }
