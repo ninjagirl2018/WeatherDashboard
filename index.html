@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    
 </head>
 <body>
     <div class=".container-fluid">
@@ -24,7 +25,36 @@
                 Ut enim ad minim veniam, quis nostrud exercitation ullamc
             </div>
         </div>
-              
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">      
+                var APIKey = "30520a5ce7b5178a150f8c3048451b43";
+
+                var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
+                "q=Toronto,Canada&units=metric&appid=" + APIKey;
+
+
+   
+
+
+            $.ajax({
+                url: queryURL,
+                method: "GET"
+            })
+                // We store all of the retrieved data inside of an object called "response"
+                .then(function(response) {
+
+                    // Log the queryURL
+                    console.log(queryURL);
+
+                    // Log the resulting object
+                    console.log(response);
+                });
+
+
+        </script>
+ 
+
         <div class="row">
             <div class="col-sm-1.5" id="day1">Day 1 Card</div>
             <div class="col-sm-1.5" id="day2">Day 2 Card</div>
@@ -37,12 +67,10 @@
             
 
         </div>
-        
-    
-    
-
+    <script src="JS/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    
 </body>
 </html>
