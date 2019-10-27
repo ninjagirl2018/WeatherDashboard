@@ -26,18 +26,41 @@ h1 {
     padding: 15px;
     margin: 25px;
     height: flex;
-   
-    
 }
+
+
+.search-container{
+    width: 490px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  input#search-bar{
+   
+    width: 175px;
+    height: 30px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+   }
+  
+  .search-icon{
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
 
 #mainDisplay {
     border: 1.5px solid darkgray;
     padding: 15px;
     margin: 25px;
     height: 250px;
-    
 }
 
+h1 {
+    color: teal;
+}
 #day1 {
     border: 1.5px solid darkgray;
     margin-left: 320px;
