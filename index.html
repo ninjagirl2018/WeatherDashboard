@@ -26,34 +26,6 @@
             </div>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript">      
-                var APIKey = "30520a5ce7b5178a150f8c3048451b43";
-
-                var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
-                "q=Toronto,Canada&units=metric&appid=" + APIKey;
-
-
-   
-
-
-            $.ajax({
-                url: queryURL,
-                method: "GET"
-            })
-                // We store all of the retrieved data inside of an object called "response"
-                .then(function(response) {
-
-                    // Log the queryURL
-                    console.log(queryURL);
-
-                    // Log the resulting object
-                    console.log(response);
-                });
-
-
-        </script>
- 
 
         <div class="row">
             <div class="col-sm-1.5" id="day1">Day 1 Card</div>
@@ -62,15 +34,12 @@
             <div class="col-sm-1.5" id="day4">Day 4 Card</div>      
             <div class="col-sm-1.5" id="day5">Day 5 Card</div>             
         </div>
-                        
-        
-            
-
-        </div>
-    <script src="JS/script.js"></script>
+    </div>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-    
+    <script src="JS/script.js"></script>
+
 </body>
 </html>
