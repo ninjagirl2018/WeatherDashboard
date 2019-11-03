@@ -1,97 +1,147 @@
-.body{
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    color: darkgray;
+html , body{
+  height: 100%;
+  color: darkslategrey;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #banner {
-    width: 100%;
-    height: 85px;
-    background-color: darkslategray;
-    color: lightcyan;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    padding-top: 15px;
+  min-height: 90px;
+  display: flex;
+  width: 100%;
+  background: darkslategrey;
 }
 
 h1 {
-    font-size: 18px;
-    margin: 20px;
-    text-align: center;
+  color:white;
+  width: 100%;
+  margin: auto;
+  display:flex;
+  align-items:center;
+  justify-content: center;
 }
 
-#cities {
-    border: 1.5px solid darkgray;
-    padding: 15px;
-    margin: 25px;
-    height: flex;
+#today {
+  margin:20px;
+  padding:20px;
+  border-radius:3px;
+  border: 1px solid darkslategrey;
+  font-size: 14px;
+}
+
+.mainCityLabel {
+  display:flex;
+}
+
+.uv span {
+  border-radius: 5px;
+  padding:5px;
+  color: red;
+  font-weight: bold;
 }
 
 
-.search-container{
-    width: 490px;
-    display: block;
-    margin: 0 auto;
+#forecast .fiveDays div {
+  padding:5px;
+  background-color: darkslategrey;
+  color:white;
+  border-radius:10px;
+  margin:5px;
+  text-align:center;
+}
+
+#citySearch {
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#search {
+  display:flex;
+  margin-left:5px;
+}
+
+#search input {
+  border: 1px solid darkslategrey;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius:5px;
+  width: 80%;
+}
+
+#search button {
+  background-color: lightgray;
+  cursor: pointer;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  border: 0px solid transparent;
+}
+
+#sampleSearches { 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 5px 20px 5px;
+  background-color:white;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+}
+
+#sampleSearches button { 
+  border: 0.25px solid darkslategrey;
+  padding: 20px;
+  cursor: pointer;
+  background-color: white;
+  font-size: 14px;
+}
+
+#searchError{
+  height:18px;
+  margin-left: 5px;
+  color:red;
+}
+
+
+@media only screen and (min-width: 768px) {
+  #searchPanel{
+    display: flex;
+    align-items: stretch;
+    min-height: calc( 100% - 70px);
   }
-  
-  input#search-bar{
-   
-    width: 175px;
-    height: 30px;
+
+  #forecast h2, #forecast .fiveDays{
     padding: 0 20px;
-    font-size: 1rem;
-    border: 1px solid #D0CFCE;
-    outline: none;
-   }
-  
-  .search-icon{
-    position: relative;
-    width: 50px;
-    height: 50px;
   }
 
-#mainDisplay {
-    border: 1.5px solid darkgray;
-    padding: 15px;
-    margin: 25px;
-    height: 250px;
+  #forecast .fiveDays{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  #forecast .fiveDays div{
+    width:calc(20% - 20px);
+  }
+
+  #citySearch{
+    min-width:25%;
+  }
+
+  #mainDisplay{
+    min-width:75%;
+  }
+
+  #today, #forecast{
+    min-height:40%;
+  }
 }
 
-h1 {
-    color: teal;
-}
-#day1 {
-    border: 1.5px solid darkgray;
-    margin-left: 320px;
-    width: 200px;
-    color: red;
-}
 
-#day2 {
-    border: 1.5px solid darkgray;
-    margin-left: 25px;
-    width: 200px;
-    color: red;
-}
-
-#day3 {
-    border: 1.5px solid darkgray;
-    margin-left: 25px;
-    width: 200px;
-    color: red;
-}
-
-#day4 {
-    border: 1.5px solid darkgray;
-    margin-left: 25px;
-    width: 200px;
-    color: red;
-}
-
-#day5 {
-    border: 1.5px solid darkgray;
-    margin-left: 25px;
-    width: 200px;
-    color: red;
+@media only screen and (min-width: 1120px) {
+  
+  #forecast .fiveDays div{
+    width:calc(20% - 40px);
+  }
 }
