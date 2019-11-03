@@ -27,7 +27,7 @@ h1 {
   margin:20px;
   padding:20px;
   border-radius:3px;
-  border: 1px solid darkslategrey;
+  border: 1px solid white;
   font-size: 14px;
 }
 
@@ -131,10 +131,14 @@ h1 {
 
   #mainDisplay{
     min-width:75%;
+    background-image: url("./CurlyClouds.jpg");
   }
 
-  #today, #forecast{
-    min-height:40%;
+  #today, #forecast {
+    min-height: 40%;
+    color: white;
+    
+    
   }
 }
 
